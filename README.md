@@ -1,16 +1,13 @@
 <p align="center">
-<img src="./braitenberg/assets/images/dtlogo.png" alt="Duckietown Logo" width="50%">
+<img src="./dtlogo.png" alt="Duckietown Logo" width="50%">
 </p>
 
-# **Duckietown Learning Experiences (LX) - MOOC Exercises**
+# **Duckietown Learning Experiences (LX)**
 
 # About this repository
 
 This is a Duckietown learning experiences repository containing activites compatible with the Duckietown infrastructure. Visit us at the 
 [Duckietown Website](https://www.duckietown.com) for more learning materials, documentation, and demos.
-
-For guided setup instructions, lecture content, and more related to these LX, see the [Self Driving Cars with 
-Duckietown course on EdX](https://learning.edx.org/course/course-v1:ETHx+DT-01x+3T2022/home).
 
 # Setup
 
@@ -56,6 +53,14 @@ Next, set up your local SSL certificate needed to run the learning experience ed
 
     dts setup mkcert
 
+**Note**: if you are trying to run the lx with the experimental setup on WSL you need to install `mkcert` on Windows before running the `dts setup mkcert` command. Follow these steps by running the commands in an _administrative PowerShell_:
+
+1. Install Chocolately: ```Set-ExecutionPolicy Bypass -Scope Process -Force;  [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))` ```
+2. Install `mkcert`: ```choco install -y mkcert```
+3. Set WSL to use the Windows Certificate Authority of `mkcert`: ```$env:CAROOT="$(mkcert -CAROOT)"; setx CAROOT $env:CAROOT; If ($Env:WSLENV -notlike "*CAROOT/up:*") { $env:WSLENV="CAROOT/up:$env:WSLENV"; setx WSLENV $Env:WSLENV }```
+4. Reboot your Windows machine.
+
 ## Step 3 - Fork this repository
 
 To store your own code, while also keeping the ability to pull updates from our version of this repo, create your own fork.
@@ -65,7 +70,7 @@ fork: `<your_username>/duckietown-lx`
 
 Then clone your new repository, replacing your GitHub username in the command below,
 
-    git clone -b mooc2022 git@github.com:<your_username>/duckietown-lx
+    git clone -b duckiedrone-lxs git@github.com:<your_username>/duckietown-lx
 
 ## Step 4 - Set up the remote
 
@@ -87,7 +92,19 @@ You can now push your work to your own repository using the standard GitHub work
 exercise will prompt you to pull from the upstream repository - updating your exercises to the latest Duckietown 
 version,
 
-    git pull upstream mooc2022
+    git pull upstream duckiedrone-lxs
+
+## Step 5 - Set up the GitHub credentials
+
+To upload code to your GitHub account from inside the LX you will need to setup a GitHub Token in dts.
+
+1. You can generate a token following [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic).
+
+1. Once you have generated your token you can add it to the _dts credentials manager_ by running:
+
+    dts config github credentials set --username YOUR_GITHUB_USERNAME --token YOUR_GITHUB_TOKEN
+
+Now you will be able to push and pull to your repo from inside the editor.
 
 ## What next?
 
@@ -104,7 +121,7 @@ work to the [challenges server](https://challenges.duckietown.org/) to evaluate 
 
 Update your folder definition and instructions,
 
-    git pull upstream mooc2022
+    git pull upstream duckiedrone-lxs
 
 
 ## 2. Make sure your system is up-to-date
@@ -145,6 +162,8 @@ Follow the instructions on the notebook and work through the notebooks in sequen
 
 ### 💻 Testing in simulation
 
+**note:** this is not yet available in the Duckiedrone exercises.
+
 To test in simulation, use the command
 
     dts code workbench --sim
@@ -170,6 +189,8 @@ The support matrix of this exercise is as follows:
 
 
 ### 🚙 Testing on a physical robot
+
+**note:** in the Duckiedrone exercises you will have different instructions to follow.
 
 You can test your agent on the robot using the command,
 

@@ -17,4 +17,8 @@ catkin_ws/.catkin_tools/
 .ipynb_checkpoints
 *-filtered*
 .pytest_cache
+<<<<<<< HEAD
 .idea
+=======
+*/packages/project-*
+>>>>>>> 7ac98a68d2f6aef79fde86c69114846d96cf96ed
