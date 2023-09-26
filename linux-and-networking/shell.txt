@@ -1,0 +1,21 @@
+**Standard Input**
+1. `cat` seems like it is hanging because it is waiting for a user input to stdin.
+
+2. When you run `cat` and type a message in the terminal, it echoes the message
+   back to you. You enter the message into standard input (stdin) and it writes
+   the result to standard output (stdout).
+
+
+**Pipes**
+2. ls | sort -r
+
+3. echo "hello world" | cat
+
+4. echo "hello world"
+
+
+**Standard Error**
+1. There is a lot of files with metadata like wrx permissions, timestamps, filenames,
+   users, etc in sorted.txt. There was no output in the terminal, and no error output
+   as standard error. This is because when there is no error to be printed, there is
+   nothing output to standard error.p

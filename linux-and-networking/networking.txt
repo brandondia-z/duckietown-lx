@@ -1,0 +1,30 @@
+**Netcat**
+1. 400 Bad request
+
+2. There is no output.
+
+4. `roscore` communicates using ROSCPP, primarily transporting using TCP/IP.
+
+
+**Talking to Your Robot**
+1. We can solve this many ways, three of which being using NMap to find the devices on the network and picking ours;
+   pinging the drone hostname to connect to the drone; and finally (and not advised) connecting to every IP address
+   on the network and hoping you get the right one.
+
+
+**Look Ma, No Internet**
+1. If the robot is set to act as a Wifi hotspot, then the robot is acting as the DHCP server.
+
+2. (I have not finished building my duckiedrone yet so I don't have the duckiedrone IP address). My IP
+   address is 128.148.207.120. 
+
+3. Instead of using the robot as a wireless AP Master, we can use an ad-hoc network between the laptop and
+   the robot. We don't need the Wifi network to connect the laptop and the robot, since each device can
+   connect directly to each other.
+
+4. Router based setup (using a portable router to establish a local network, where the router assigns an IP
+   address to each device and they can communicate with each other); Direct ethernet connection (directly
+   connect the base station to the robot with an ethernet cable, connecting the devices); Cell phone tethering
+   (create a local network with a cell phone's tethering, connecting both devices to the cell network and cellular
+   data)
+   

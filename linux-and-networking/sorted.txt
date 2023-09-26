@@ -1,0 +1,23 @@
+1048958 drwxrwxr-x 9 vsuser 4.0K Sep 26 01:37 ./
+1048959 -rw-rw-r-- 1 vsuser  485 Sep 25 17:31 .dtproject
+1048960 -rw-rw-r-- 1 vsuser  100 Sep 25 17:31 .gitignore
+1048961 drwxrwxr-x 2 vsuser 4.0K Sep 25 17:31 .vscode/
+1048963 -rw-rw-r-- 1 vsuser 8.1K Sep 25 17:31 README.md
+1048964 drwxrwxr-x 3 vsuser 4.0K Sep 25 17:31 assets/
+1048968 drwxrwxr-x 3 vsuser 4.0K Sep 25 17:31 docs/
+1048985 drwxrwxr-x 2 vsuser 4.0K Sep 25 17:31 notebooks/
+1048990 drwxrwxr-x 2 vsuser 4.0K Sep 25 17:31 packages/
+1048994 drwxrwxr-x 2 vsuser 4.0K Sep 25 17:31 tests/
+1050094 -rw-rw-r-- 1 vsuser   21 Sep 26 01:09 hello1.py
+1051041 -rw-rw-r-- 1 vsuser    2 Sep 26 01:23 one.txt
+1092336 -rw-rw-r-- 1 vsuser   65 Sep 26 01:21 my_cat.py
+1092411 -rw-rw-r-- 1 vsuser   45 Sep 26 01:11 hello2.py
+1092423 -rwxrwxr-x 1 vsuser   18 Sep 26 01:12 hello.sh
+1092426 -rw-rw-r-- 1 vsuser  384 Sep 26 01:28 shell.txt
+1092440 -rw-rw-r-- 1 vsuser    0 Sep 26 01:37 sorted.txt
+1092441 -rw-rw-r-- 1 vsuser    2 Sep 26 01:23 two.txt
+1092478 -rw-rw-r-- 1 vsuser    2 Sep 26 01:23 three.txt
+1092479 -rw-rw-r-- 1 vsuser  138 Sep 26 01:34 my_reverse_sort.py
+1343710 drwxr-xr-x 1 root   4.0K Sep 26 00:54 ../
+1349916 drwxrwxr-x 3 vsuser 4.0K Sep 26 01:34 .pytest_cache/
+total 92K
